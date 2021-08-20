@@ -10,8 +10,7 @@ class VacuoleDiscard:
 
     def discard(self, cropped_list):
         """This function determines the quality of cropped images and only keeps vacuoles
-        with high contrast and well defined edges. This function returns sobel filter edge
-        detection images."""
+        with high contrast and well defined edges."""
         vac_discard = []
         vac_keep = []
 
