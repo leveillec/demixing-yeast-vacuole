@@ -53,7 +53,7 @@ Running the main program vacuole_analysis.py will:
         - Will present the user one image at a time for annotation.\
         - Keyboard inputs 1: Mixed (**E** top) 2: Demixed (**E** bottom) 4: Unknown (hard to tell or out of focus) are saved\
         - Images automatically advance to the next one. If a non-digit is entered, the user is presented with a message to try again.
-5. The main script will then\
+5. The vacuole_analysis will then\
         - Total the number of vacuoles counted as mixed and demixed\
         - Calculate the percent phase separated at that given temperature\
         - Return a .csv file containing the temperature and percent phase separated.
