@@ -2,7 +2,7 @@
 
 ## Goal
 
-1. The primary goal of this program is to manually count the number of vacuoles with and without domains in a given image.
+1. The primary goal of this program is to efficiently count the number of vacuoles with and without domains in a given image.
 2. The secondary goal for the user to be blind to the sample conditions of the image to minimize bias in the analysis. 
 
 ## Context
@@ -21,7 +21,13 @@ To minimize bias, the user is blind to the sample temperature, growth temperatur
 
 Python scripts are located in the source folder under analysis. 
 
-The first, vacuole_analysis.py, is the main program. The other three scripts (vacuole_assign.py, vacuole_discard.py, and vacuole_identifier.py) contain functions that the main script depends on. 
+Main Program
+- vacuole_analysis.py
+
+Scripts containing functions that the main program uses:
+- vacuole_assign.py
+- vacuole_discard.py
+- vacuole_identifier.py
 
 ## How it works
 
