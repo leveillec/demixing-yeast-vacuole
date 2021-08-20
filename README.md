@@ -25,10 +25,35 @@ Main Program
 - vacuole_analysis.py
 
 Scripts containing functions that the main program uses:
-- vacuole_assign.py
-- vacuole_discard.py
 - vacuole_identifier.py
+- vacuole_discard.py
+- vacuole_assign.py
+
+## What you need
+- Image stack containing bright vacuoles on a dark background. 
+- Images work best when vacuoles are evenly spaced in the plane of view (i.e. not on top of eachother or moving).
+- File path contains the date of experiment and file name of the image contains the temperature of the sample. 
+- image directory
+- output directory
 
 ## How it works
 
 ![](src/images/workflow.png)
+
+Running the main program vacuole_analysis will:
+1. Extract the file information
+2. The get_vacuoles function from the vacuole_identifier script \
+        (A) Prepares the images for vacuole identification through contrast enhancement and de-noising each image. \ 
+        (B) Using blob detection (difference of gaussians method), the coordinates and approximate radius of each vacuole is determined. \
+        (C) A mask is created to mark vacuoles of interest. Vacuoles that are too small or along the edges are discarded. \
+        (D) Vacuoles are then cropped into individual images. An array containing the cropped images is returned. \
+3. The discard function from the discard_vacuoles script \
+        Filters out images of vacuoles that were out of focus or have pore contrast with the background. \
+4. The assign function from the vacuole_assign script \
+        Will present the user one image at a time for annotation. 
+        Keyboard inputs 1: mixed, 2: demixed domains, 4: unknown (hard to tell or out of focus) are saved. 
+        Images autmoatically advance to the next one. If a non-digit is entered, the user is presented with a message to try again. \
+5. The main script will then 
+        Total the number of vacuoles counted as mixed and demixed 
+        Calculate the percent phase separated at that given temperature 
+        Return a csv file containing the temperature and percent phase separated. 
