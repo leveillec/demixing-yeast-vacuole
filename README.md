@@ -19,10 +19,17 @@ To minimize bias, the user is blind to the sample temperature, growth temperatur
 
 # Contents
 
-vacuole_analysis.py
+Python scripts are located in the source folder under analysis. 
 
-vacuole_assign.py\
-vacuole_discard.py\
-vacuole_identifier.py\
+The first, vacuole_analysis.py, is the main program. The other three scripts (vacuole_assign.py, vacuole_discard.py, and vacuole_identifier.py) contain functions that the main script depends on. 
+
+
+
+
+
+
+
+
+
 
 ![](src/images/workflow.png)
