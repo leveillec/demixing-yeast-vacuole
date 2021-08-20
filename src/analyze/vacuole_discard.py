@@ -37,6 +37,9 @@ class VacuoleDiscard:
             mask_im = self.test_binary.binary_mask(image)
             binary_im = self.test_binary.binary_image(image)
             # Remove out of focus vacuoles
+            # Area fraction (af) of the vacuole mask / binary image
+            # Should not be so small or so big 
+            # indicative of pore contrast / out of focus
             af1 = ((np.count_nonzero(binary_im)) / 2500)
             x, y = mask_im.shape
             af2 = ((np.count_nonzero(mask_im)) / x * y)
