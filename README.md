@@ -30,8 +30,7 @@ Scripts containing functions that the main program uses:
 - vacuole_assign.py
 
 ## What you need
-- Image stack containing bright vacuoles on a dark background. 
-- Images work best when vacuoles are evenly spaced in the plane of view (i.e. not on top of eachother or moving).
+- Image stack containing bright vacuoles on a dark background. Images work best when vacuoles are evenly spaced in the plane of view (i.e. not on top of eachother or moving).
 - File path contains the date of experiment and file name of the image contains the temperature of the sample. 
 - image directory
 - output directory
@@ -51,10 +50,9 @@ Running the main program vacuole_analysis.py will:
 3. The discard function from the discard_vacuoles script\
         - Filters out images of vacuoles that were out of focus or have pore contrast with the background.
 4. The assign function from the vacuole_assign script\
-        - Will present the user one image at a time for annotation (as shown in E).\
-        - Keyboard inputs are saved\
-                1: mixed (**E** top) 2: demixed domains (**E** bottom) 4: unknown (hard to tell or out of focus)\
-        - Images autmoatically advance to the next one. If a non-digit is entered, the user is presented with a message to try again.
+        - Will present the user one image at a time for annotation.\
+        - Keyboard inputs 1: Mixed (**E** top) 2: Demixed (**E** bottom) 4: Unknown (hard to tell or out of focus) are saved\
+        - Images automatically advance to the next one. If a non-digit is entered, the user is presented with a message to try again.
 5. The main script will then\
         - Total the number of vacuoles counted as mixed and demixed\
         - Calculate the percent phase separated at that given temperature\
