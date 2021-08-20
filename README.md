@@ -42,19 +42,19 @@ Scripts containing functions that the main program uses:
 
 Running the main program vacuole_analysis.py will:
 1. Extract the file information
-2. The get_vacuoles function from the vacuole_identifier script
-        (A) Prepares the images for vacuole identification through contrast enhancement and de-noising each image.
-        (B) Using blob detection (difference of gaussians method), the coordinates and approximate radius of each vacuole is determined.
-        (C) A mask is created to mark vacuoles of interest. Vacuoles that are too small or along the edges are discarded.
-        (D) Vacuoles are then individually labelled. 
+2. The get_vacuoles function from the vacuole_identifier script\
+        (A) Prepares the images for vacuole identification through contrast enhancement and de-noising each image.\
+        (B) Using blob detection (difference of gaussians method), the coordinates and approximate radius of each vacuole is determined.\
+        (C) A mask is created to mark vacuoles of interest. Vacuoles that are too small or along the edges are discarded.\
+        (D) Vacuoles are then individually labelled.\ 
         (E) An array containing the cropped images is returned.
-3. The discard function from the discard_vacuoles script
+3. The discard function from the discard_vacuoles script\
         Filters out images of vacuoles that were out of focus or have pore contrast with the background.
-4. The assign function from the vacuole_assign script
-        Will present the user one image at a time for annotation (as shown in E).
-        Keyboard inputs are saved - 1: mixed (E top) 2: demixed domains (E bottom) 4: unknown (hard to tell or out of focus)
+4. The assign function from the vacuole_assign script\
+        Will present the user one image at a time for annotation (as shown in E).\
+        Keyboard inputs are saved - 1: mixed (E top) 2: demixed domains (E bottom) 4: unknown (hard to tell or out of focus)\
         Images autmoatically advance to the next one. If a non-digit is entered, the user is presented with a message to try again.
 5. The main script will then 
-        Total the number of vacuoles counted as mixed and demixed 
-        Calculate the percent phase separated at that given temperature 
-        Return a .csv file containing the temperature and percent phase separated. 
+        Total the number of vacuoles counted as mixed and demixed\ 
+        Calculate the percent phase separated at that given temperature\ 
+        Return a .csv file containing the temperature and percent phase separated.\ 
