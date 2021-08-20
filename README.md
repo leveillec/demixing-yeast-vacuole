@@ -30,6 +30,7 @@ Scripts containing functions that the main program uses:
 - vacuole_assign.py
 
 ## What you need
+- Python Version 3.7 
 - Image stack containing bright vacuoles on a dark background. Images work best when vacuoles are evenly spaced in the plane of view (i.e. not on top of eachother or moving).
 - File path contains the date of experiment and file name of the image contains the temperature of the sample. 
 - image directory
