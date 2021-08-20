@@ -87,8 +87,8 @@ class VacuoleAnalysis:
 
 
 if __name__ == "__main__":
-    image_directory = "/Users/chantelleleveille/Desktop/Images_counting/08_06_21_Exp3"
-    output_directory = "/Users/chantelleleveille/Desktop/Workspaces/Vacuole_image_classification/output"
+    image_directory = "/Users/leveillec/Desktop/Images_counting/08_06_21_Exp3"
+    output_directory = "/Users/leveillec/Desktop/Workspaces/Vacuole_image_classification/output"
 
     vacuole_analysis = VacuoleAnalysis(image_directory, output_directory)
     vacuole_analysis.analyze()
