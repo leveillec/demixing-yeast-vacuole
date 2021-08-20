@@ -21,8 +21,8 @@ To minimize bias, the user is blind to the sample temperature, growth temperatur
 
 vacuole_analysis.py
 
-vacuole_assign.py
-vacuole_discard.py
-vacuole_identifier.py
+vacuole_assign.py\
+vacuole_discard.py\
+vacuole_identifier.py\
 
 ![](src/images/workflow.png)
