@@ -10,7 +10,7 @@
 In order to get good statistics on a popluation of cells with phase separated vacuoles, thousands of vacuolues were analyzed. It was important to have an efficient and accurate way to analyze this data. Key features of this program include: 
 - Automatic sifting through files to extract file information and open the images.
 - Vacuoles are automatically identified in an image and individually presented to the user. This prevents double counting.
-- Manual keybaord input and automatic advancement to the next image for quick tabulation.
+- Manual keyboard input and automatic advancement to the next image for quick tabulation.
 - Information is automatically saved for future plotting.
 
 To minimize bias, the user is blind to the sample temperature, growth temperature and field of view. 
